@@ -9,17 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
+    
     @IBOutlet weak var TextLabel: UILabel!
     @IBOutlet weak var UserInput: UITextField!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+
+    
     @IBAction func Button(_ sender: Any) {
         TextLabel.text = UserInput.text
+        UserInput.text = ("")
     }
 }
 
