@@ -15,6 +15,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBOutlet weak var TextLabel: UILabel!
+    @IBOutlet weak var UserInput: UITextField!
+    
+    @IBAction func Button(_ sender: Any) {
+        TextLabel.text = UserInput.text
+    }
 }
 
